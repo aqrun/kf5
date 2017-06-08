@@ -1,6 +1,7 @@
 <?php
 namespace Aqrun\kf5\core;
 
+use Aqrun\kf5\Client;
 
 class Tickets extends ClientAbstract{
 	

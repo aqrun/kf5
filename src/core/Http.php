@@ -1,6 +1,8 @@
 <?php
 namespace Aqrun\kf5\core;
 
+use Aqrun\kf5\Client;
+
 class Http{
 	
 	public static function send(Client $client, $endPoint, $data = null, $method = 'GET', $contentType = 'application/json') {

@@ -2,6 +2,7 @@
 namespace Aqrun\kf5\core;
 
 
+
 class Attachments extends ClientAbstract{
 	/**
 	 * 上传附件

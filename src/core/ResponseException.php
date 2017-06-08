@@ -1,7 +1,7 @@
 <?php
 namespace Aqrun\kf5\core;
 
-class ResponseException extends Exception {
+class ResponseException extends \Exception {
 
 	/**
 	 * @param string     $method

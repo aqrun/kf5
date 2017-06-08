@@ -1,6 +1,8 @@
 <?php
 namespace Aqrun\kf5\core;
 
+use Aqrun\kf5\Client;
+
 abstract class ClientAbstract
 {
 
@@ -56,7 +58,7 @@ abstract class ClientAbstract
 	public function validateResponse($response , $method , $type = ''){
 		$state_code = $type=='create'?'201':'200';
 		if($type == 'delete'){
-			$response = new stdClass();
+			$response = new \stdClass();
 		}
 		if(!is_object($response) || ($this->client->getDebug()->lastResponseCode != $state_code)){
 			throw new ResponseException($this,$method);
