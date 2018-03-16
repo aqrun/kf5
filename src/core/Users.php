@@ -96,7 +96,7 @@ class Users extends ClientAbstract{
 	 * @throws ResponseException
 	 * @return mixed
 	 */
-	public function update($user_id = '',$data = ''){
+	public function update($user_id = '',$data = []){
 		$url = 'users';
 		$this->validatePara('int', $user_id,'user_id',__METHOD__);
 		$this->validatePara('array', $data,'data',__METHOD__);
@@ -129,7 +129,7 @@ class Users extends ClientAbstract{
 	 */
 	public function search($query = ''){
 		$url = 'users/search';
-		$data = '';
+		$data = [];
 		if(!empty($query)){
 			$data['query'] = $query;
 		}
